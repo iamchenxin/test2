@@ -1,1 +1,7 @@
 aasdasdas
+
+https://github.com/iamchenxin/test2
+
+    The Marshal::PtrToStructure method copies the data from the unmanaged memory into the managed heap. This means that newCity points to a boxed instance of MCITY.
+    If you do not call Marshal::FreeCoTaskMem, the unmanaged memory will leak. Even after freeing the unmanaged memory, however, newCity still points to a valid managed block of memory. The contents of the unmanaged memory were copied to the managed memory by the Marshal::PtrToStructure call.
+    Unlike other .NET-enabled languages, Managed Extensions for C++ allows you to access the contents of a boxed object, so you can modify the contents of the box. You could have modified the boxed structure pointed to by newCity without first unboxing the structure, modifying it, and then reboxing it.
